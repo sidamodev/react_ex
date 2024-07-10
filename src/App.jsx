@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
+import Profile from "./profile";
+import "./App.css";
+import ShoppingList from "./fruit";
+
 const App = () => {
   const [counter, setCounter] = useState(0);
   console.log(counter);
@@ -25,6 +29,8 @@ const App = () => {
       <Button onClick={setToZero} text="zero" />
       <Button onClick={decreaseByOne} text="minus" />
       <Display counter={counter} />
+      <Profile />
+      <ShoppingList />
     </>
   );
 };
